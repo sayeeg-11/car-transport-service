@@ -13,8 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (progress < 1) {
         window.requestAnimationFrame(step);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       };
+=======
+    }});
+>>>>>>> b2a69ae (Revert "Improved navbar UI: alignment, spacing, theme button placement, respo…")
 
       // Start counters when hero section is in view
       const heroObserver = new IntersectionObserver((entries) => {
@@ -27,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
             heroObserver.unobserve(entry.target);
           }
         });
-      });
       }, { threshold: 0.5 });
 
       heroObserver.observe(document.querySelector('.hero'));
@@ -232,8 +235,8 @@ if (quickQuoteForm) {
 
         setTimeout(() => {
           preloader.style.display = "none";
-        }, 100);
-      }, 100);
+        }, 100); 
+      }, 100); 
     });
 
      // Back to Top Functionality (defensive)
@@ -331,6 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   // Event listeners
   nextBtn.addEventListener("click", nextSlide);
   prevBtn.addEventListener("click", prevSlide);
@@ -344,14 +348,18 @@ document.addEventListener("DOMContentLoaded", function () {
 =======
 
     //Keypress-Activated Easter Egg
+=======
+    
+    //Keypress-Activated Easter Egg 
+>>>>>>> b2a69ae (Revert "Improved navbar UI: alignment, spacing, theme button placement, respo…")
     document.addEventListener("DOMContentLoaded", () => {
       const car = document.querySelector(".car");
-      if (!car) return;
+      if (!car) return; 
 
       document.addEventListener("keydown", (event) => {
         if (event.ctrlKey && event.shiftKey && (event.key === "?" || event.key === "/")) {
           car.classList.remove("animate");
-          void car.offsetWidth;
+          void car.offsetWidth; 
           car.classList.add("animate");
         }
       });
@@ -371,7 +379,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("load", () => {
     const preloader = document.getElementById("preloader");
-
+    
     // Small delay for smooth fade-out
     setTimeout(() => {
       preloader.classList.add("fade-out");
@@ -643,6 +651,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
   });
 
   // Video fallback for mobile
@@ -657,3 +666,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 =======
 >>>>>>> c3fc199 (Improved navbar UI: alignment, spacing, theme button placement, responsive cleanup)
+=======
+
+>>>>>>> b2a69ae (Revert "Improved navbar UI: alignment, spacing, theme button placement, respo…")
